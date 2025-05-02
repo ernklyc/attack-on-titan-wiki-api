@@ -56,7 +56,7 @@ function FilterControls({
     <div className="mb-8">
       <button
         onClick={() => setIsFilterOpen(!isFilterOpen)}
-        className="mb-4 flex items-center gap-2 px-4 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors shadow-md"
+        className="mb-4 flex items-center gap-2 px-4 py-2.5 bg-[#c71f1f] hover:bg-red-700 text-white rounded-lg transition-colors duration-200 shadow-md"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 4a1 1 0 011-1h16a1 1 0 010 2H4a1 1 0 01-1-1zm3 6h10m-10 6h10" />
@@ -65,9 +65,9 @@ function FilterControls({
       </button>
       
       {isFilterOpen && (
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-6 animate-slideDown border border-gray-200 dark:border-gray-700">
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-xl shadow-lg p-6 mb-6 animate-slideDown border border-gray-200 dark:border-gray-700">
           <h2 className="text-xl font-bold mb-4 dark:text-white flex items-center">
-            <svg className="w-5 h-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-5 h-5 mr-2 text-[#c71f1f]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 4a1 1 0 011-1h16a1 1 0 010 2H4a1 1 0 01-1-1zm3 6h10m-10 6h10" />
             </svg>
             Filter Characters
@@ -80,7 +80,7 @@ function FilterControls({
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Status</label>
               <div className="relative">
                 <select 
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5 appearance-none"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white shadow-sm focus:border-[#c71f1f] focus:ring-[#c71f1f] pl-10 pr-4 py-2.5 appearance-none"
                   value={currentFilters['status'] || 'All'}
                   onChange={(e) => handleFilterChange('status', e.target.value)}
                 >
@@ -108,7 +108,7 @@ function FilterControls({
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Gender</label>
               <div className="relative">
                 <select 
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5 appearance-none"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white shadow-sm focus:border-[#c71f1f] focus:ring-[#c71f1f] pl-10 pr-4 py-2.5 appearance-none"
                   value={currentFilters['gender'] || 'All'}
                   onChange={(e) => handleFilterChange('gender', e.target.value)}
                 >
@@ -135,7 +135,7 @@ function FilterControls({
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Titan Shifter</label>
               <div className="relative">
                 <select 
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5 appearance-none"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white shadow-sm focus:border-[#c71f1f] focus:ring-[#c71f1f] pl-10 pr-4 py-2.5 appearance-none"
                   value={currentFilters['titan_shifter'] || 'All'}
                   onChange={(e) => handleFilterChange('titan_shifter', e.target.value)}
                 >
@@ -164,7 +164,7 @@ function FilterControls({
                 <input 
                   type="text" 
                   placeholder="Search by name..."
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white shadow-sm focus:border-[#c71f1f] focus:ring-[#c71f1f] pl-10 pr-4 py-2.5"
                   value={currentFilters['name'] || ''}
                   onChange={(e) => handleFilterChange('name', e.target.value)}
                 />
@@ -186,7 +186,7 @@ function FilterControls({
                 <input 
                   type="text" 
                   placeholder="e.g. Survey Corps"
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white shadow-sm focus:border-[#c71f1f] focus:ring-[#c71f1f] pl-10 pr-4 py-2.5"
                   value={currentFilters['group'] || ''}
                   onChange={(e) => handleFilterChange('group', e.target.value)}
                 />
@@ -205,7 +205,7 @@ function FilterControls({
                 <input 
                   type="text" 
                   placeholder="e.g. Shiganshina District"
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-[#222222] dark:text-white shadow-sm focus:border-[#c71f1f] focus:ring-[#c71f1f] pl-10 pr-4 py-2.5"
                   value={currentFilters['birthplace'] || ''}
                   onChange={(e) => handleFilterChange('birthplace', e.target.value)}
                 />
@@ -228,7 +228,7 @@ function FilterControls({
                 {Object.entries(currentFilters).map(([key, value]) => (
                   <span 
                     key={key}
-                    className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200 shadow-sm"
+                    className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800 dark:bg-[#222222] dark:text-gray-200 shadow-sm"
                   >
                     <span className="font-semibold mr-1">{key}:</span> {value}
                     <button 
@@ -259,7 +259,7 @@ function FilterControls({
           <div className="mt-6 flex justify-center">
             <button 
               onClick={() => setIsFilterOpen(false)} 
-              className="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg shadow-md transition-colors flex items-center"
+              className="px-6 py-2.5 bg-[#c71f1f] hover:bg-red-700 text-white font-medium rounded-lg shadow-md transition-colors duration-200 flex items-center"
             >
               <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
@@ -388,7 +388,7 @@ function CharacterGrid() {
         <h1 className="text-3xl font-bold dark:text-white">Characters</h1>
         
         {/* Character count badge */}
-        <div className="bg-red-100 text-red-800 text-sm font-medium px-4 py-1.5 rounded-full dark:bg-red-900/50 dark:text-red-200 shadow-sm border border-red-200 dark:border-red-800">
+        <div className="bg-red-100 text-red-800 text-sm font-medium px-4 py-1.5 rounded-full dark:bg-[#222222] dark:text-[#c71f1f] shadow-sm border border-red-200 dark:border-gray-700">
           {paginationInfo.count} Characters
         </div>
       </div>
@@ -404,7 +404,7 @@ function CharacterGrid() {
         <div className="animate-pulse flex flex-col space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[...Array(8)].map((_, i) => (
-              <div key={i} className="bg-gray-300 dark:bg-gray-700 h-72 rounded-lg"></div>
+              <div key={i} className="bg-gray-300 dark:bg-[#222222] h-72 rounded-lg border border-gray-200 dark:border-gray-700"></div>
             ))}
           </div>
         </div>
@@ -417,14 +417,14 @@ function CharacterGrid() {
                 <CharacterCard key={character.id} character={character} />
               ))
             ) : (
-              <div className="col-span-full text-center py-12 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+              <div className="col-span-full text-center py-12 bg-gray-50 dark:bg-[#222222] rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
                 <svg className="w-16 h-16 mx-auto text-gray-400 dark:text-gray-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <p className="text-xl text-gray-600 dark:text-gray-400 mb-3">No characters match your filters</p>
                 <button 
                   onClick={() => handleFilterChange({})} 
-                  className="mt-2 px-5 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors shadow-md"
+                  className="mt-2 px-5 py-2 bg-[#c71f1f] hover:bg-red-700 text-white rounded-lg transition-colors duration-200 shadow-md"
                 >
                   Clear Filters
                 </button>
@@ -434,7 +434,7 @@ function CharacterGrid() {
             
           {/* Pagination controls */}
           {characters.length > 0 && (
-            <div className="mt-10 flex flex-wrap items-center justify-between bg-gray-50 dark:bg-gray-800/50 p-4 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+            <div className="mt-10 flex flex-wrap items-center justify-between bg-gray-50 dark:bg-[#222222] p-4 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md">
               <div className="text-sm text-gray-600 dark:text-gray-400 mb-4 md:mb-0">
                 Showing page {currentPage} of {paginationInfo.pages}
               </div>
@@ -443,7 +443,7 @@ function CharacterGrid() {
                 {currentPage > 1 && (
                   <Link 
                     href={getPaginationUrl(currentPage - 1)}
-                    className="px-4 py-2 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 rounded-md text-gray-800 dark:text-white transition-colors border border-gray-200 dark:border-gray-600 shadow-sm"
+                    className="px-4 py-2 bg-white dark:bg-[#222222] hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md text-gray-800 dark:text-white transition-colors duration-200 border border-gray-200 dark:border-gray-700 shadow-sm"
                   >
                     Previous
                   </Link>
@@ -469,8 +469,8 @@ function CharacterGrid() {
                           href={getPaginationUrl(pageNum)}
                           className={`w-10 h-10 flex items-center justify-center rounded-md shadow-sm border ${
                             pageNum === currentPage 
-                              ? 'bg-red-600 text-white border-red-500' 
-                              : 'bg-white hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white border-gray-200 dark:border-gray-600'
+                              ? 'bg-[#c71f1f] text-white border-red-700' 
+                              : 'bg-white hover:bg-gray-50 dark:bg-[#222222] dark:hover:bg-gray-800 text-gray-800 dark:text-white border-gray-200 dark:border-gray-700'
                           } transition-colors`}
                         >
                           {pageNum}
@@ -484,7 +484,7 @@ function CharacterGrid() {
                 {currentPage < paginationInfo.pages && (
                   <Link 
                     href={getPaginationUrl(currentPage + 1)}
-                    className="px-4 py-2 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 rounded-md text-gray-800 dark:text-white transition-colors border border-gray-200 dark:border-gray-600 shadow-sm"
+                    className="px-4 py-2 bg-white dark:bg-[#222222] hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md text-gray-800 dark:text-white transition-colors duration-200 border border-gray-200 dark:border-gray-700 shadow-sm"
                   >
                     Next
                   </Link>
