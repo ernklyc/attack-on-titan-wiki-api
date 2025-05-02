@@ -17,9 +17,29 @@ async function fetchAPI<T>(endpoint: string, options = {}): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-// Fetch all characters with optional pagination
-export function getCharacters(page = 1): Promise<CharacterResponse> {
-  return fetchAPI<CharacterResponse>(`/characters?page=${page}`);
+// Helper to build URL with query parameters
+function buildUrlWithParams(baseEndpoint: string, params: Record<string, string | number | boolean | null | undefined>): string {
+  const url = new URL(`${API_BASE_URL}${baseEndpoint}`);
+  
+  // Add all non-empty parameters to the URL
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== undefined && value !== null && value !== '') {
+      url.searchParams.append(key, String(value));
+    }
+  });
+  
+  return url.pathname + url.search;
+}
+
+// Fetch all characters with optional pagination and filters
+export function getCharacters(page = 1, filters: Record<string, string> = {}): Promise<CharacterResponse> {
+  const params = {
+    page,
+    ...filters
+  };
+  
+  const endpoint = buildUrlWithParams('/characters', params);
+  return fetchAPI<CharacterResponse>(endpoint);
 }
 
 // Fetch a single character by ID
