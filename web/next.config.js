@@ -9,7 +9,8 @@ const nextConfig = {
         pathname: '/**',
       }
     ],
-    formats: ['image/webp', 'image/avif']
+    formats: ['image/webp', 'image/avif'],
+    dangerouslyAllowSVG: true
   },
 };
 

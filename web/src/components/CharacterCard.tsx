@@ -1,6 +1,9 @@
+"use client"
+
 import { Character } from '@/lib/types';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 interface CharacterCardProps {
   character: Character;
@@ -9,7 +12,13 @@ interface CharacterCardProps {
 export default function CharacterCard({ character }: CharacterCardProps) {
   // Default image if character.img is not available - using a local fallback SVG
   const imageUrl = character.img || '/images/no-image.svg';
+  const [imgError, setImgError] = useState(false);
   
+  // Function to handle image loading error
+  const handleImageError = () => {
+    setImgError(true);
+  };
+
   // Determine status badge color
   const getStatusColor = () => {
     switch (character.status?.toLowerCase()) {
@@ -43,14 +52,25 @@ export default function CharacterCard({ character }: CharacterCardProps) {
       
       {/* Image container with proper aspect ratio */}
       <div className="relative w-full h-60">
-        <Image 
-          src={imageUrl}
-          alt={`${character.name}`}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover object-center"
-          priority={false}
-        />
+        {imgError ? (
+          <Image 
+            src="/images/no-image.svg"
+            alt={`${character.name}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover object-center"
+          />
+        ) : (
+          <Image 
+            src={imageUrl}
+            alt={`${character.name}`}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover object-center"
+            priority={false}
+            onError={handleImageError}
+          />
+        )}
       </div>
       
       {/* Character info */}
