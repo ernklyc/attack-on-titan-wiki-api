@@ -7,8 +7,8 @@ interface CharacterCardProps {
 }
 
 export default function CharacterCard({ character }: CharacterCardProps) {
-  // Default image if character.img is not available
-  const imageUrl = character.img || 'https://via.placeholder.com/250x350?text=No+Image';
+  // Default image if character.img is not available - using a local fallback SVG
+  const imageUrl = character.img || '/images/no-image.svg';
   
   // Determine status badge color
   const getStatusColor = () => {

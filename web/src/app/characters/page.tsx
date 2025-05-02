@@ -139,12 +139,14 @@ async function CharacterGrid({
 }
 
 // Main page component that extracts page param from URL and passes to CharacterGrid
-export default function CharactersPage({ 
+export default async function CharactersPage({ 
   searchParams 
 }: { 
   searchParams: { page?: string } 
 }) {
-  const page = searchParams.page || "1";
+  // Use Promise.resolve to ensure we properly await the searchParams object
+  const params = await Promise.resolve(searchParams);
+  const page = params.page || "1";
   
   return (
     <div className="container mx-auto px-4 py-8">
