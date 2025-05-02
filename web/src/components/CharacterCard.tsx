@@ -14,6 +14,8 @@ export default function CharacterCard({ character }: CharacterCardProps) {
   const [imgError, setImgError] = useState(false);
   // State to control the modal visibility
   const [showModal, setShowModal] = useState(false);
+  // State to track if the modal image is loaded
+  const [modalImgLoaded, setModalImgLoaded] = useState(false);
   
   // Function to handle image loading error
   const handleImageError = () => {
@@ -26,6 +28,8 @@ export default function CharacterCard({ character }: CharacterCardProps) {
       document.body.classList.add('modal-open');
     } else {
       document.body.classList.remove('modal-open');
+      // Reset modal image load state when modal closes
+      setModalImgLoaded(false);
     }
     
     // Cleanup on unmount
@@ -56,16 +60,6 @@ export default function CharacterCard({ character }: CharacterCardProps) {
   return (
     <>
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl relative">
-        {/* Overlay gradient for text readability at the top */}
-        <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-black/50 to-transparent z-10"></div>
-        
-        {/* Character name at the top */}
-        <div className="absolute top-0 left-0 w-full p-3 z-20">
-          <h2 className="text-lg font-bold text-white tracking-tight drop-shadow-md truncate">
-            {character.name}
-          </h2>
-        </div>
-        
         {/* Image container with proper aspect ratio */}
         <div className="relative w-full h-60">
           {imgError ? (
@@ -186,28 +180,34 @@ export default function CharacterCard({ character }: CharacterCardProps) {
                   </svg>
                 </button>
                 
-                {/* Hero image */}
-                <div className="relative h-72 w-full">
+                {/* Hero image - with preloading setup */}
+                <div className="relative h-72 w-full bg-gray-100 dark:bg-gray-800">
+                  {/* Show loading skeleton until image loads */}
+                  {!modalImgLoaded && !imgError && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="animate-pulse w-16 h-16 rounded-full bg-gray-300 dark:bg-gray-700"></div>
+                    </div>
+                  )}
+                  
                   {imgError ? (
-                    <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800">
-                      <Image 
+                    <div className="w-full h-full flex items-center justify-center">
+                      <img 
                         src="/images/no-image.svg"
                         alt={`${character.name}`}
-                        width={200}
-                        height={200}
-                        className="opacity-50"
+                        className="h-1/2 opacity-50"
                       />
                     </div>
                   ) : (
-                    <div className="w-full h-full relative">
-                      {/* Use img tag for more reliable image loading in the modal */}
-                      <img 
-                        src={imageUrl} 
-                        alt={`${character.name}`}
-                        className="absolute inset-0 w-full h-full object-cover object-center"
-                        onError={handleImageError}
-                      />
-                    </div>
+                    <img 
+                      src={imageUrl} 
+                      alt={`${character.name}`}
+                      className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ${modalImgLoaded ? 'opacity-100' : 'opacity-0'}`}
+                      onLoad={() => setModalImgLoaded(true)}
+                      onError={() => {
+                        setImgError(true);
+                        setModalImgLoaded(true);
+                      }}
+                    />
                   )}
                   
                   {/* Gradient overlay for text readability */}

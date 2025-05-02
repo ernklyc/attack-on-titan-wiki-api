@@ -80,7 +80,7 @@ function FilterControls({
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Status</label>
               <div className="relative">
                 <select 
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5 appearance-none"
                   value={currentFilters['status'] || 'All'}
                   onChange={(e) => handleFilterChange('status', e.target.value)}
                 >
@@ -88,9 +88,16 @@ function FilterControls({
                     <option key={option} value={option}>{option}</option>
                   ))}
                 </select>
+                {/* Icon on the left */}
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-500 dark:text-gray-400">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </span>
+                {/* Custom dropdown arrow */}
+                <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </span>
               </div>
@@ -101,7 +108,7 @@ function FilterControls({
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Gender</label>
               <div className="relative">
                 <select 
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5 appearance-none"
                   value={currentFilters['gender'] || 'All'}
                   onChange={(e) => handleFilterChange('gender', e.target.value)}
                 >
@@ -114,6 +121,12 @@ function FilterControls({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </span>
+                {/* Custom dropdown arrow */}
+                <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
               </div>
             </div>
             
@@ -122,7 +135,7 @@ function FilterControls({
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Titan Shifter</label>
               <div className="relative">
                 <select 
-                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5"
+                  className="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-red-500 focus:ring-red-500 pl-10 pr-4 py-2.5 appearance-none"
                   value={currentFilters['titan_shifter'] || 'All'}
                   onChange={(e) => handleFilterChange('titan_shifter', e.target.value)}
                 >
@@ -133,6 +146,12 @@ function FilterControls({
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-500 dark:text-gray-400">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </span>
+                {/* Custom dropdown arrow */}
+                <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </span>
               </div>
