@@ -48,21 +48,28 @@ export const buildResponse = (
   const regex = /([&?])page=\d+/gi;
   //formats a url string for the next and prev page properties
   let queriesString = req.originalUrl.replace(regex, "").replace(req.path, "");
+  // Ensure queriesString starts with & if it's not empty
+  if (queriesString.length > 0 && !queriesString.startsWith('&')) {
+    queriesString = `&${queriesString}`;
+  }
 
-  const pagesArr: any = [];
+  const pagesArr: any[] = []; // Explicitly type as any[] or define a proper type
 
   //the object that is returned default values are 0, 0, null, and null, and an empty array
   const response: DataResponse = {
     info: {
-      count: 0,
-      pages: 0,
+      count: content.length, // Set count directly
+      pages: 0, // Will be calculated
       next_page: null,
       prev_page: null,
     },
-    results: [],
+    results: [], // Initialize as empty
   };
 
-  response.info.count = content.length;
+  // Return early if content is empty
+  if (content.length === 0) {
+    return response;
+  }
 
   //splits the resource array into an array of sub arrays with a max length of specified number
   for (let i = 0; i < content.length; i += dataPerPage) {
@@ -72,30 +79,26 @@ export const buildResponse = (
 
   response.info.pages = pagesArr.length;
 
-  //if the pagesArr has more than one page then we need to set all the values of the DataResponse object
-  if (pagesArr.length > 1) {
-    //check if the user queried for a specific page if not we return the first page
-    if (req.query.page != undefined) {
-      const pageNum = parseInt(<string>req.query.page);
-      const pageIndex = pageNum - 1;
-      response.results = pagesArr[pageIndex];
-      //correctly setting the prev_page and next_page properties based on the current page
-      if (pageNum < pagesArr.length) {
-        response.info.next_page = `${dns + req.path}?page=${
-          pageNum + 1 + queriesString
-        }`;
-        if (pageNum != 1) {
-          response.info.prev_page = `${dns + req.path}?page=${
-            pageNum - 1 + queriesString
-          }`;
-        }
-      }
-    } else {
-      response.results = pagesArr[0];
-      response.info.next_page = `${dns + req.path}?page=2${queriesString}`;
+  let pageNum = 1; // Default to page 1
+  if (req.query.page !== undefined) {
+    const parsedPage = parseInt(<string>req.query.page);
+    // Validate page number
+    if (!isNaN(parsedPage) && parsedPage > 0 && parsedPage <= pagesArr.length) {
+      pageNum = parsedPage;
     }
-  } else {
-    response.results = pagesArr[0];
+  }
+
+  const pageIndex = pageNum - 1;
+  response.results = pagesArr[pageIndex] || []; // Assign the correct page, default to empty array if index is invalid
+
+  // Set next_page URL if applicable
+  if (pageNum < pagesArr.length) {
+    response.info.next_page = `${dns}${req.path}?page=${pageNum + 1}${queriesString}`;
+  }
+
+  // Set prev_page URL if applicable
+  if (pageNum > 1) {
+    response.info.prev_page = `${dns}${req.path}?page=${pageNum - 1}${queriesString}`;
   }
 
   return response;
