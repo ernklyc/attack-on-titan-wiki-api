@@ -17,22 +17,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${inter.className} min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900`}>
+      <body suppressHydrationWarning className={`${inter.className} min-h-screen flex flex-col bg-gray-50 dark:bg-[#1a1a1a]`}>
         <Navbar />
         <main className="flex-grow">
           {children}
         </main>
-        <footer className="bg-gray-900 text-white py-6">
+        <footer className="bg-[#1a1a1a] text-white py-6 border-t border-gray-800">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
-                <p className="text-sm">© 2025 Attack on Titan API Explorer</p>
+                <p className="text-sm"> 2025 Attack on Titan API Explorer</p>
               </div>
               <div className="flex space-x-4">
-                <a href="https://github.com/your-username/attack-on-titan-api" className="text-gray-300 hover:text-white">
+                <a href="https://github.com/your-username/attack-on-titan-api" className="text-gray-300 hover:text-[#c71f1f]">
                   GitHub
                 </a>
-                <a href="/api-docs" className="text-gray-300 hover:text-white">
+                <a href="/api-docs" className="text-gray-300 hover:text-[#c71f1f]">
                   API Documentation
                 </a>
               </div>
