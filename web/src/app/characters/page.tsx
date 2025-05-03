@@ -502,7 +502,9 @@ function CharacterGrid() {
 export default function CharactersPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <CharacterGrid />
+      <Suspense fallback={<CharactersLoading />}>
+        <CharacterGrid />
+      </Suspense>
     </div>
   );
 }

@@ -9,11 +9,9 @@ const nextConfig = {
     // TypeScript kontrollerini derleme sırasında atla
     ignoreBuildErrors: true,
   },
-  experimental: {
-    // Ön derleme hatalarını atla
-    skipTrailingSlashRedirect: true,
-    skipMiddlewareUrlNormalize: true,
-  },
+  // Ön derleme hatalarını atla (root seviyesinde)
+  skipTrailingSlashRedirect: true,
+  skipMiddlewareUrlNormalize: true,
   images: {
     remotePatterns: [
       {
