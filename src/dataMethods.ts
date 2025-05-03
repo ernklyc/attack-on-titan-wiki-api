@@ -1,4 +1,5 @@
 import * as fs from "node:fs";
+import path from "path";
 
 //all of our types
 import { DataResponse } from "./types";
@@ -9,13 +10,21 @@ import { Organization } from "./types";
 import { Titan } from "./types";
 import { Request } from "express";
 
-const dataPerPage = parseInt(process.env.DATA_PER_PAGE || "")
+const dataPerPage = parseInt(process.env.DATA_PER_PAGE || "20")
 const dns = process.env.DNS
 
 //returns the array of objects for the specified file
 export const getResource = (file: string) => {
-  const data = fs.readFileSync(`data/${file}.json`, "utf-8");
-  return JSON.parse(data);
+  try {
+    // Use path.join to create an absolute path that works in any environment
+    const dataPath = path.join(process.cwd(), "data", `${file}.json`);
+    const data = fs.readFileSync(dataPath, "utf-8");
+    return JSON.parse(data);
+  } catch (error) {
+    console.error(`Error reading ${file}.json:`, error);
+    // Return an empty array as fallback
+    return [];
+  }
 };
 
 //method for getting resource by id param
