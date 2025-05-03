@@ -20,14 +20,40 @@ const app = express();
 
 app.use(cors())
 
+// Import the fixAllUrls utility
+import { fixAllUrls } from "./fixUrls";
+
+// Determine the base URL from environment or request
+const getBaseUrl = (req: express.Request): string => {
+  // If DNS is set in environment, use it
+  if (process.env.DNS) {
+    const dns = process.env.DNS;
+    return dns.endsWith('/') ? dns.slice(0, -1) : dns; // Remove trailing slash if present
+  }
+  
+  // Otherwise construct from the request
+  return `${req.protocol}://${req.get("host")}`;
+};
+
+// Try to fix URLs on startup if DNS is set
+if (process.env.DNS) {
+  console.log('Attempting to fix API URLs in data files...');
+  try {
+    fixAllUrls();
+  } catch (error) {
+    console.error('Error fixing URLs:', error);
+  }
+}
+
 //default endpoints
 app.get("/", (req, res) => {
+  const baseUrl = getBaseUrl(req);
   res.json({
-    characters: req.protocol + "://" + req.get("host") + "/characters",
-    episodes: req.protocol + "://" + req.get("host") + "/episodes",
-    locations: req.protocol + "://" + req.get("host") + "/locations",
-    organizations: req.protocol + "://" + req.get("host") + "/organizations",
-    titans: req.protocol + "://" + req.get("host") + "/titans",
+    characters: `${baseUrl}/characters`,
+    episodes: `${baseUrl}/episodes`,
+    locations: `${baseUrl}/locations`,
+    organizations: `${baseUrl}/organizations`,
+    titans: `${baseUrl}/titans`,
   });
 });
 

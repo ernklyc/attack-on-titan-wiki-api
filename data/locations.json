@@ -7,7 +7,7 @@
     "region": "South",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/10"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/10"
   },
   {
     "id": 2,
@@ -17,12 +17,12 @@
     "region": "South",
     "notable_inhabitants": [
       "Braus family",
-      "https://api.attackontitanapi.com/characters/131",
-      "https://api.attackontitanapi.com/characters/147",
-      "https://api.attackontitanapi.com/characters/132"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/131",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/147",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/132"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/70"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/70"
   },
   {
     "id": 3,
@@ -31,11 +31,11 @@
     "territory": "Wall Rose",
     "region": "East",
     "notable_inhabitants": [
-      "https://api.attackontitanapi.com/characters/126",
-      "https://api.attackontitanapi.com/characters/77"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/126",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/77"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/16"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/16"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "region": "Center",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/39"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/39"
   },
   {
     "id": 5,
@@ -55,7 +55,7 @@
     "region": "South",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/27"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/27"
   },
   {
     "id": 6,
@@ -65,7 +65,7 @@
     "region": "South",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/28"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/28"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
       "Anti-Marleyan Volunteers"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/57"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/57"
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/18"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/18"
   },
   {
     "id": 10,
@@ -111,7 +111,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/88"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/88"
   },
   {
     "id": 11,
@@ -121,7 +121,7 @@
     "region": "Continental mainland",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/60"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/60"
   },
   {
     "id": 12,
@@ -131,7 +131,7 @@
     "region": "Orient",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/63"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/63"
   },
   {
     "id": 13,
@@ -141,7 +141,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/6"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/6"
   },
   {
     "id": 14,
@@ -161,7 +161,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/88"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/88"
   },
   {
     "id": 16,
@@ -181,7 +181,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/64"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/64"
   },
   {
     "id": 18,
@@ -190,31 +190,31 @@
     "territory": "unknown",
     "region": "unknown",
     "notable_inhabitants": [
-      "https://api.attackontitanapi.com/characters/86",
-      "https://api.attackontitanapi.com/characters/88",
-      "https://api.attackontitanapi.com/characters/89",
-      "https://api.attackontitanapi.com/characters/90",
-      "https://api.attackontitanapi.com/characters/170",
-      "https://api.attackontitanapi.com/characters/169",
-      "https://api.attackontitanapi.com/characters/168",
-      "https://api.attackontitanapi.com/characters/87",
-      "https://api.attackontitanapi.com/characters/184",
-      "https://api.attackontitanapi.com/characters/181",
-      "https://api.attackontitanapi.com/characters/160",
-      "https://api.attackontitanapi.com/characters/177",
-      "https://api.attackontitanapi.com/characters/180",
-      "https://api.attackontitanapi.com/characters/178",
-      "https://api.attackontitanapi.com/characters/92",
-      "https://api.attackontitanapi.com/characters/96",
-      "https://api.attackontitanapi.com/characters/95",
-      "https://api.attackontitanapi.com/characters/93",
-      "https://api.attackontitanapi.com/characters/94",
-      "https://api.attackontitanapi.com/characters/91",
-      "https://api.attackontitanapi.com/characters/173",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/86",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/88",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/89",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/90",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/170",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/169",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/168",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/87",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/184",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/181",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/160",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/177",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/180",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/178",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/92",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/96",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/95",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/93",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/94",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/91",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/173",
       "Mrs. Jaeger"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/23"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/23"
   },
   {
     "id": 19,
@@ -226,7 +226,7 @@
       "Eldians"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/57"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/57"
   },
   {
     "id": 20,
@@ -236,7 +236,7 @@
     "region": "Continental mainland",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/60"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/60"
   },
   {
     "id": 21,
@@ -256,7 +256,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/86"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/86"
   },
   {
     "id": 23,
@@ -265,10 +265,10 @@
     "territory": "Wall Sina",
     "region": "North",
     "notable_inhabitants": [
-      "https://api.attackontitanapi.com/characters/63"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/63"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/45"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/45"
   },
   {
     "id": 24,
@@ -284,7 +284,7 @@
       "Anti-Marleyan Volunteers"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/1"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/1"
   },
   {
     "id": 25,
@@ -294,7 +294,7 @@
     "region": "South",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/27"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/27"
   },
   {
     "id": 26,
@@ -304,7 +304,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/57"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/57"
   },
   {
     "id": 27,
@@ -313,15 +313,15 @@
     "territory": "Wall Maria",
     "region": "South",
     "notable_inhabitants": [
-      "https://api.attackontitanapi.com/characters/188",
-      "https://api.attackontitanapi.com/characters/2",
-      "https://api.attackontitanapi.com/characters/1",
-      "https://api.attackontitanapi.com/characters/160",
-      "https://api.attackontitanapi.com/characters/161",
-      "https://api.attackontitanapi.com/characters/67"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/188",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/2",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/1",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/160",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/161",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/67"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/1"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/1"
   },
   {
     "id": 28,
@@ -331,7 +331,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/3"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/3"
   },
   {
     "id": 29,
@@ -340,17 +340,17 @@
     "territory": "Wall Sina",
     "region": "East",
     "notable_inhabitants": [
-      "https://api.attackontitanapi.com/characters/135",
-      "https://api.attackontitanapi.com/characters/134",
-      "https://api.attackontitanapi.com/characters/51",
-      "https://api.attackontitanapi.com/characters/52",
-      "https://api.attackontitanapi.com/characters/87",
-      "https://api.attackontitanapi.com/characters/157",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/135",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/134",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/51",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/52",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/87",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/157",
       "Pastor Nick",
-      "https://api.attackontitanapi.com/characters/15"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/15"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/23"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/23"
   },
   {
     "id": 30,
@@ -359,13 +359,13 @@
     "territory": "Wall Rose",
     "region": "South",
     "notable_inhabitants": [
-      "https://api.attackontitanapi.com/characters/3",
-      "https://api.attackontitanapi.com/characters/130",
-      "https://api.attackontitanapi.com/characters/80",
-      "https://api.attackontitanapi.com/characters/151"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/3",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/130",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/80",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/151"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/3"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/3"
   },
   {
     "id": 31,
@@ -374,10 +374,10 @@
     "territory": "Wall Sina",
     "region": "unknown",
     "notable_inhabitants": [
-      "https://api.attackontitanapi.com/characters/5",
-      "https://api.attackontitanapi.com/characters/57",
-      "https://api.attackontitanapi.com/characters/47",
-      "https://api.attackontitanapi.com/characters/49"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/5",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/57",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/47",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/49"
     ],
     "notable_former_inhabitants": [],
     "debut": "A Choice with No Regrets: Part One"
@@ -390,7 +390,7 @@
     "region": "North",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/42"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/42"
   },
   {
     "id": 33,
@@ -400,7 +400,7 @@
     "region": "unknown",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/28"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/28"
   },
   {
     "id": 34,
@@ -426,7 +426,7 @@
       "Anti-Marleyan Volunteers"
     ],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/1"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/1"
   },
   {
     "id": 36,
@@ -436,6 +436,6 @@
     "region": "West",
     "notable_inhabitants": [],
     "notable_former_inhabitants": [],
-    "debut": "https://api.attackontitanapi.com/episodes/26"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/26"
   }
 ]

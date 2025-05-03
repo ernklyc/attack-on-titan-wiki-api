@@ -4,10 +4,10 @@
     "name": "Anti-Marleyan Volunteers",
     "img": "https://static.wikia.nocookie.net/shingekinokyojin/images/3/36/Anti-Marleyan_Volunteers_%28Anime%29.jpeg/revision/latest/scale-to-width-down/350?cb=20210211153018",
     "occupations": [],
-    "notable_members": ["https://api.attackontitanapi.com/characters/183"],
+    "notable_members": ["http://attack-on-titan-wiki-api.vercel.app/characters/183"],
     "notable_former_members": [],
     "affiliation": "unknown",
-    "debut": "https://api.attackontitanapi.com/episodes/68"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/68"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "Royal Government",
-    "debut": "https://api.attackontitanapi.com/episodes/41"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/41"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "Scout Regiment",
-    "debut": "https://api.attackontitanapi.com/episodes/2"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/2"
   },
   {
     "id": 4,
@@ -40,13 +40,13 @@
       "Charge of refueling, ammunition, and other aiding jobs"
     ],
     "notable_members": [
-      "https://api.attackontitanapi.com/characters/61",
-      "https://api.attackontitanapi.com/characters/62",
-      "https://api.attackontitanapi.com/characters/60"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/61",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/62",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/60"
     ],
     "notable_former_members": [],
     "affiliation": "Military",
-    "debut": "https://api.attackontitanapi.com/episodes/1"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/1"
   },
   {
     "id": 5,
@@ -56,7 +56,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "unknown",
-    "debut": "https://api.attackontitanapi.com/episodes/69"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/69"
   },
   {
     "id": 6,
@@ -64,14 +64,14 @@
     "img": "https://static.wikia.nocookie.net/shingekinokyojin/images/0/05/Jaegerists_%28Anime%29.png/revision/latest/scale-to-width-down/350?cb=20210228232109",
     "occupations": [],
     "notable_members": [
-      "https://api.attackontitanapi.com/characters/194",
-      "https://api.attackontitanapi.com/characters/195",
-      "https://api.attackontitanapi.com/characters/192",
-      "https://api.attackontitanapi.com/characters/189"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/194",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/195",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/192",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/189"
     ],
     "notable_former_members": [],
     "affiliation": "unknown",
-    "debut": "https://api.attackontitanapi.com/episodes/71"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/71"
   },
   {
     "id": 7,
@@ -84,7 +84,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "Marley",
-    "debut": "https://api.attackontitanapi.com/episodes/35"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/35"
   },
   {
     "id": 8,
@@ -92,23 +92,23 @@
     "img": "https://static.wikia.nocookie.net/shingekinokyojin/images/6/67/Marley%27s_Top_Brass.png/revision/latest/scale-to-width-down/350?cb=20210122181114",
     "occupations": [],
     "notable_members": [
-      "https://api.attackontitanapi.com/characters/86",
-      "https://api.attackontitanapi.com/characters/87",
-      "https://api.attackontitanapi.com/characters/88"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/86",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/87",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/88"
     ],
     "notable_former_members": [],
     "affiliation": "Warriors",
-    "debut": "https://api.attackontitanapi.com/episodes/60"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/60"
   },
   {
     "id": 9,
     "name": "Military",
     "img": "https://static.wikia.nocookie.net/shingekinokyojin/images/8/86/Military.png/revision/latest/scale-to-width-down/350?cb=20170823064044",
     "occupations": [],
-    "notable_members": ["https://api.attackontitanapi.com/characters/1"],
+    "notable_members": ["http://attack-on-titan-wiki-api.vercel.app/characters/1"],
     "notable_former_members": [],
     "affiliation": "Jaegerists",
-    "debut": "https://api.attackontitanapi.com/episodes/1"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/1"
   },
   {
     "id": 10,
@@ -121,10 +121,10 @@
       "Monitoring the Garrison",
       "Directing fire-fighting operations."
     ],
-    "notable_members": ["https://api.attackontitanapi.com/characters/51"],
+    "notable_members": ["http://attack-on-titan-wiki-api.vercel.app/characters/51"],
     "notable_former_members": [],
     "affiliation": "Military",
-    "debut": "https://api.attackontitanapi.com/episodes/3"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/3"
   },
   {
     "id": 11,
@@ -137,7 +137,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "Royal Government",
-    "debut": "https://api.attackontitanapi.com/episodes/1"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/1"
   },
   {
     "id": 12,
@@ -147,7 +147,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "Military Police Regiment",
-    "debut": "https://api.attackontitanapi.com/episodes/2"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/2"
   },
   {
     "id": 13,
@@ -157,7 +157,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "unknown",
-    "debut": "https://api.attackontitanapi.com/episodes/57"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/57"
   },
   {
     "id": 14,
@@ -167,7 +167,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "Eldia",
-    "debut": "https://api.attackontitanapi.com/episodes/38"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/38"
   },
   {
     "id": 15,
@@ -181,15 +181,15 @@
       "Eldian military's main expeditionary force against Marley"
     ],
     "notable_members": [
-      "https://api.attackontitanapi.com/characters/2",
-      "https://api.attackontitanapi.com/characters/1",
-      "https://api.attackontitanapi.com/characters/5",
-      "https://api.attackontitanapi.com/characters/3",
-      "https://api.attackontitanapi.com/characters/4"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/2",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/1",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/5",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/3",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/4"
     ],
     "notable_former_members": [],
     "affiliation": "Military",
-    "debut": "https://api.attackontitanapi.com/episodes/1"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/1"
   },
   {
     "id": 16,
@@ -199,7 +199,7 @@
     "notable_members": [],
     "notable_former_members": [],
     "affiliation": "Marley",
-    "debut": "https://api.attackontitanapi.com/episodes/74"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/74"
   },
   {
     "id": 17,
@@ -211,13 +211,13 @@
       "Acted as spies in the Paradis Island Operation."
     ],
     "notable_members": [
-      "https://api.attackontitanapi.com/characters/86",
-      "https://api.attackontitanapi.com/characters/87",
-      "https://api.attackontitanapi.com/characters/88",
-      "https://api.attackontitanapi.com/characters/89"
+      "http://attack-on-titan-wiki-api.vercel.app/characters/86",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/87",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/88",
+      "http://attack-on-titan-wiki-api.vercel.app/characters/89"
     ],
     "notable_former_members": [],
     "affiliation": "Marleyan military",
-    "debut": "https://api.attackontitanapi.com/episodes/29"
+    "debut": "http://attack-on-titan-wiki-api.vercel.app/episodes/29"
   }
 ]

@@ -11,7 +11,10 @@ import { Titan } from "./types";
 import { Request } from "express";
 
 const dataPerPage = parseInt(process.env.DATA_PER_PAGE || "20")
-const dns = process.env.DNS
+// Ensure we have a proper domain format with trailing slash if needed
+const dns = process.env.DNS || ''
+// Make sure dns is properly formatted (ends with / if it doesn't already)
+const formattedDns = dns.endsWith('/') ? dns : dns ? `${dns}/` : '/'
 
 //returns the array of objects for the specified file
 export const getResource = (file: string) => {
@@ -102,12 +105,12 @@ export const buildResponse = (
 
   // Set next_page URL if applicable
   if (pageNum < pagesArr.length) {
-    response.info.next_page = `${dns}${req.path}?page=${pageNum + 1}${queriesString}`;
+    response.info.next_page = `${formattedDns}${req.path.startsWith('/') ? req.path.substring(1) : req.path}?page=${pageNum + 1}${queriesString}`;
   }
 
   // Set prev_page URL if applicable
   if (pageNum > 1) {
-    response.info.prev_page = `${dns}${req.path}?page=${pageNum - 1}${queriesString}`;
+    response.info.prev_page = `${formattedDns}${req.path.startsWith('/') ? req.path.substring(1) : req.path}?page=${pageNum - 1}${queriesString}`;
   }
 
   return response;
