@@ -23,11 +23,11 @@ app.use(cors())
 //default endpoints
 app.get("/", (req, res) => {
   res.json({
-    characters: "https://api.attackontitanapi.com/characters",
-    episodes: "https://api./attackontitanapi.com/episodes",
-    locations: "https://api.attackontitanapi.com/locations",
-    organizations: "https://api.attackontitanapi.com/organizations",
-    titans: "https://api.attackontitanapi.com/titans",
+    characters: req.protocol + "://" + req.get("host") + "/characters",
+    episodes: req.protocol + "://" + req.get("host") + "/episodes",
+    locations: req.protocol + "://" + req.get("host") + "/locations",
+    organizations: req.protocol + "://" + req.get("host") + "/organizations",
+    titans: req.protocol + "://" + req.get("host") + "/titans",
   });
 });
 
