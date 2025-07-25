@@ -49,10 +49,6 @@ All Nine Titans and their powers:
 - Current and former inheritors
 - Allegiances
 
-## Web Interface
-
-You can visit our [web interface](https://attack-on-titan-web.vercel.app) to visually explore the API data. This interface allows you to view the data in a more interactive way while accessing the API.
-
 ## Getting Started
 
 To start using the API, use the main endpoint:
